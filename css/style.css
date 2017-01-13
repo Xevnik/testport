@@ -1,12 +1,4 @@
 /*
-====================================================
-* [Master Stylesheet]
-
-  Template Name : Privado 
-  Version    :  1.0 
-  Author     :  Codetic
-  Author URI :  http://themeforest.net/user/Codetic
-====================================================
 
    TOC:
   =======
@@ -48,6 +40,10 @@
 /* -------------------------------- 
 1. Primary style
 -------------------------------- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 *,::after,::before {
   -webkit-box-sizing:border-box;

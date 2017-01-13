@@ -129,45 +129,45 @@ jQuery(document).ready(function($) {
     };
     var data = {
         html_css: [{
-            value: 40,
+            value: 30,
             color: "#404148"
         }, {
-            value: 60,
+            value: 70,
             color: "#fff"
         }],
-        sass: [{
-            value: 90,
+        javascript: [{
+            value: 30,
             color: "#404148"
         }, {
-            value: 10,
+            value: 70,
             color: "#fff"
         }],
         jquery: [{
-            value: 90,
+            value: 30,
             color: "#404148"
         }, {
-            value: 10,
+            value: 70,
             color: "#fff"
         }],
-        rails: [{
-            value: 60,
+        php: [{
+            value: 35,
             color: "#404148"
         }, {
-            value: 40,
+            value: 65,
             color: "#fff"
         }],
-        backbone: [{
+        angularjs: [{
             value: 50,
             color: "#404148"
         }, {
             value: 50,
             color: "#fff"
         }],
-        photoshop: [{
-            value: 75,
+        mysql: [{
+            value: 55,
             color: "#404148"
         }, {
-            value: 25,
+            value: 45,
             color: "#fff"
         }]
     };
