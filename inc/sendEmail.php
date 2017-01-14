@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'youremail@domain.com';
+$siteOwnersEmail = 'kchau.jobs@gmail.com';
 
 
 if($_POST) {

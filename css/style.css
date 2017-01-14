@@ -2056,5 +2056,11 @@ button.filter + label {
   max-width:inherit!important
 }
 
+.skill-badge{
+  /*height: 150px;*/
+  /*width: 150px;*/
+  margin: auto;
+  font-size: 15rem;
+}
 
 
