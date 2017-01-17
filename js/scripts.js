@@ -4,8 +4,15 @@
         $('.loader').fadeOut();    
         $('#preloader').delay(350).fadeOut('slow');    
         $('body').delay(350);   
-
+        //getWindowsDimensions();
     });
+// function getWindowsDimensions(){
+//     const height = $(window).innerHeight();
+//     const width = $(window).innerWidth();
+//     console.log(`Height: ${height} Width: ${width}`);
+//
+//     $(".page-container .single-page.is-full-width ").css({"width": width});
+// }
 
 // Global document ready function
 
@@ -23,7 +30,6 @@ jQuery(document).ready(function($) {
         var selectedProject = $(this),
             toggle = !selectedProject.hasClass('is-full-width');
         if (toggle) toggleProject($(this), $('.page-container'), toggle);
-
     });
 
     //close page
@@ -34,8 +40,9 @@ jQuery(document).ready(function($) {
 
     //scroll to page info
     $('.page-container .page-scroll').on('click', function() {
-        $('.page-container').animate({
-            'scrollTop': $(window).height()
+        $('.page-container').stop().animate({
+            'scrollTop': $(window).innerHeight()
+            //'scrollTo': $(window).height()
         }, 500);
     });
 

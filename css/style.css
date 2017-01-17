@@ -378,13 +378,18 @@ ul li {
 /*   3. Main Components 
 -------------------------------- */
 body{
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
+
+/*::-webkit-scrollbar {*/
+  /*display: none;*/
+/*}*/
+
 .page-container {
   height:100vh;
   width:100vw;
   position:relative;
-  /*overflow-x:hidden;*/
+  overflow-x:hidden;
   -webkit-overflow-scrolling:touch
 }
 
