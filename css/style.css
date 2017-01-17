@@ -377,12 +377,14 @@ ul li {
 /* -------------------------------- 
 /*   3. Main Components 
 -------------------------------- */
-
+body{
+  overflow-x: hidden;
+}
 .page-container {
   height:100vh;
   width:100vw;
   position:relative;
-  overflow-x:hidden;
+  /*overflow-x:hidden;*/
   -webkit-overflow-scrolling:touch
 }
 
@@ -1479,6 +1481,9 @@ button.filter + label {
   border-color:#3f3f46;
 }
 
+.project-url-2.btn{
+  margin-top: 15px;
+}
 
 .mfp-close-btn-in .mfp-close {
   background: #3f3f46;
@@ -1604,6 +1609,9 @@ button.filter + label {
 .portfolio-items figure.effect-roxy h2 {
   padding: 20% 0 10px 5px;
   font-size: 1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 
 .portfolio-items figure.effect-roxy p {
@@ -1622,6 +1630,7 @@ button.filter + label {
 }
 
 .portfolio-items figure.effect-roxy:hover figcaption::before,
+.portfolio-items figure.effect-roxy:hover h2,
 .portfolio-items figure.effect-roxy:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);

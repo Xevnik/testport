@@ -243,13 +243,15 @@ TOC :
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+.portfolio-items figure.effect-roxy h2 {
+  opacity: 1;
+}
 
 .portfolio-items figure.effect-roxy p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-
 
 .testimonials blockquote p {
   max-width: 600px;
