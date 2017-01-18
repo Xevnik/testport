@@ -377,13 +377,6 @@ ul li {
 /* -------------------------------- 
 /*   3. Main Components 
 -------------------------------- */
-body{
-  /*overflow-x: hidden;*/
-}
-
-/*::-webkit-scrollbar {*/
-  /*display: none;*/
-/*}*/
 
 .page-container {
   height:100vh;
@@ -1212,7 +1205,7 @@ body{
 .skills {
   background: none repeat scroll 0 0 #0ed4c8;
   overflow: hidden;
-  padding: 35px 0;
+  padding: 0 35px 0;
   position: relative;
 }
 
@@ -1795,7 +1788,6 @@ button.filter + label {
 /* ----------------------------------------------------
 /*  7. Contact Styles
 /* ---------------------------------------------------- */
-
 .contact {
   background: none repeat scroll 0 0 #f2f2f2;
   overflow: hidden;
@@ -2070,7 +2062,7 @@ button.filter + label {
   /*height: 150px;*/
   /*width: 150px;*/
   margin: auto;
-  font-size: 15rem;
+  font-size: 10rem;
 }
 
 

@@ -7,13 +7,23 @@
         //getWindowsDimensions();
     });
 // function getWindowsDimensions(){
-//     const height = $(window).innerHeight();
-//     const width = $(window).innerWidth();
+//     const height = $(window).height();
+//     const width = $(window).width();
 //     console.log(`Height: ${height} Width: ${width}`);
 //
-//     $(".page-container .single-page.is-full-width ").css({"width": width});
+//     $(".page-container, .page-container .single-page.is-full-width").css({"width": width});
 // }
+$(function() {
+console.log('disabling');
+    var $body = $(".page-container");
+    $body.bind('scroll', function() {
+        // "Disable" the horizontal scroll.
+        if ($body.scrollLeft() !== 0) {
+            $body.scrollLeft(0);
+        }
+    });
 
+});
 // Global document ready function
 
 jQuery(document).ready(function($) {
@@ -41,8 +51,10 @@ jQuery(document).ready(function($) {
     //scroll to page info
     $('.page-container .page-scroll').on('click', function() {
         $('.page-container').stop().animate({
-            'scrollTop': $(window).innerHeight()
-            //'scrollTo': $(window).height()
+            'scrollTop': $(window).height()
+            // 'scrollTo': $('.is-full-width > .page-info > .row').offset().top
+            // 'scrollTop': $(window).innerHeight()
+            // 'scrollTop': $('.is-full-width > .page-info > .row').offset().top
         }, 500);
     });
 
