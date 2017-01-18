@@ -14,7 +14,7 @@
 //     $(".page-container, .page-container .single-page.is-full-width").css({"width": width});
 // }
 $(function() {
-console.log('disabling');
+// console.log('disabling');
     var $body = $(".page-container");
     $body.bind('scroll', function() {
         // "Disable" the horizontal scroll.
