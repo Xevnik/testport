@@ -170,7 +170,7 @@ jQuery(document).ready(function($) {
         $.ajax({
 
             type: "POST",
-            url: "inc/sendEmail.php",
+            url: "inc/mail_handler.php",
             data: data,
             success: function(msg) {
 
