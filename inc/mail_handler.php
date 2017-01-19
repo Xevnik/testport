@@ -43,7 +43,7 @@ if($_POST) {
 //}
 
     require_once('email_config.php');
-    require('vendor/phpmailer/PHPMailerAutoload.php');
+    require('./vendor/phpmailer/PHPMailer/PHPMailerAutoload.php');
     $mail = new PHPMailer;
     $mail->SMTPDebug = 0;                               // Enable verbose debug output
 
