@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$errors = [];
+$error = [];
 /*
  * Error Checking
  * */
@@ -43,7 +43,7 @@ if($_POST) {
 //}
 
     require_once('email_config.php');
-    require('../vendor/phpmailer/PHPMailer/PHPMailerAutoload.php');
+    require('../vendor/phpmailer/phpmailer/PHPMailerAutoload.php');
     $mail = new PHPMailer;
     $mail->SMTPDebug = 0;                               // Enable verbose debug output
 
@@ -81,7 +81,7 @@ Sender: {$name}<br>
 Subject: {$subject}<br>
 Message: {$contact_message}<br>
 ";
-    $mail->Subject = $_POST['subject'];
+    $mail->Subject = $subject;
     $mail->Body = $message;
     $mail->AltBody = htmlentities($contact_message);
 
