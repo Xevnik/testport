@@ -1,1 +1,4 @@
 inc/email_config.php
+composer.json
+composer.lock
+vendor/
