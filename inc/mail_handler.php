@@ -45,8 +45,7 @@ if($_POST) {
     require_once('email_config.php');
     require('../vendor/phpmailer/phpmailer/PHPMailerAutoload.php');
     $mail = new PHPMailer;
-    $mail->SMTPDebug = 0;                               // Enable verbose debug output
-
+    //$mail->SMTPDebug = 3;                               // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -65,9 +64,8 @@ if($_POST) {
     );
 
     $mail->smtpConnect($options);
-    $mail->From = 'kchau.mailserver@gmail.com';//your email sending account
-    $mail->FromName = 'Kevin Chau\'s Mail Daemon';//your email sending account name
-    $mail->addAddress('kchau.jobs@gmail.com'/*your email address, or the email the sender if you are sending confirmation*/ /*email address user name*/);     // Add a recipient
+    $mail->setFrom('kchau.mailserver@gmail.com', 'KC Mailer Daemon');//your email sending account
+    $mail->addAddress('kchau.jobs@gmail.com', 'Kevin Chau'/*your email address, or the email the sender if you are sending confirmation*/ /*email address user name*/);     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo($email/*email address of the person sending the message, so you can reply*/);
 //$mail->addCC('cc@example.com');
