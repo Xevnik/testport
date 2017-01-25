@@ -34,6 +34,9 @@ jQuery(document).ready(function($) {
             showCaption($('.page-container .single-page').eq(0));
         }
     });
+    //dynamically add phone number and email
+    $('#phoneNumber').text('714 717 4608');
+    $('#email').text('kchau.jobs@gmail.com');
 
     //open page
     $('.single-page').on('click', function() {
