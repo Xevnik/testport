@@ -133,6 +133,8 @@ jQuery(document).ready(function($) {
 
     // main directions
     map = new GMaps({
+        disableDefaultUI: true,
+        draggable: false,
         position: "TOP_CENTER",
         el: '#map',
         lat: 33.652496,

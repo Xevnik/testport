@@ -326,7 +326,8 @@ ul li {
   padding-right:40px;
   position:relative;
   text-decoration:none;
-  text-transform: uppercase
+  text-transform: uppercase;
+  cursor: default;
 }
 
 .footer a:after {
@@ -1093,7 +1094,6 @@ ul li {
   margin: 25px auto;
   text-align: center;
   width: 60px;
-  cursor: pointer;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
