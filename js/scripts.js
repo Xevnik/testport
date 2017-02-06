@@ -140,7 +140,7 @@ jQuery(document).ready(function($) {
         lat: 33.652496,
         lng: -117.932187,
         zoom: 11,
-        zoomControl: true,
+        // zoomControl: true,
         zoomControlOpt: {
             style: 'SMALL',
             position: 'TOP_LEFT'
