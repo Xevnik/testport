@@ -133,12 +133,14 @@ jQuery(document).ready(function($) {
 
     // main directions
     map = new GMaps({
+        disableDefaultUI: true,
+        draggable: false,
         position: "TOP_CENTER",
         el: '#map',
         lat: 33.652496,
         lng: -117.932187,
         zoom: 11,
-        zoomControl: true,
+        // zoomControl: true,
         zoomControlOpt: {
             style: 'SMALL',
             position: 'TOP_LEFT'
