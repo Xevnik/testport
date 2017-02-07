@@ -1116,6 +1116,9 @@ ul li {
   padding: 35px 0 50px;
   position: relative;
 }
+.resume .download {
+  text-align: center;
+}
 
 .resume .sec-divider {
   background:url("../img/icons/grad-cap.svg") no-repeat scroll center center rgba(0,0,0,0);
