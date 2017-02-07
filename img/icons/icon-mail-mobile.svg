@@ -1,0 +1,18 @@
+<svg width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="46" width="46" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse opacity="0.8" ry="16.223744" rx="16.000786" id="svg_3" cy="22" cx="22.000001" stroke-width="0" fill="#ffffff" stroke="#ffffff"/>
+  <metadata transform="matrix(1.2543540821462926,0,0,1.2543540821462926,0,0) ">Created by potrace 1.10, written by Peter Selinger 2001-2011</metadata>
+  <g stroke="null" id="svg_22">
+   <g id="svg_20" fill="#404148" transform="matrix(0.014138472408303364,0,0,-0.014138472408303364,46.54308553217231,65.99222709213723) ">
+    <path stroke="null" fill="#7f7f7f" id="svg_21" d="m-2312.908184,3602.526363c-63,-38 -63,-36 -63,-492c0,-392 1,-415 20,-445c39,-65 23,-63 620,-63c597,0 581,-2 620,63c19,30 20,53 20,445c0,456 0,454 -63,492c-31,19 -54,20 -577,20c-523,0 -546,-1 -577,-20zm340,-279c125,-77 232,-141 237,-141c7,0 376,225 488,298l22,14l0,-64l0,-65l-247,-153c-137,-85 -255,-154 -263,-154c-8,0 -126,69 -262,154l-248,153l0,65l0,64l23,-14c12,-9 124,-79 250,-157z"/>
+   </g>
+  </g>
+ </g>
+</svg>
