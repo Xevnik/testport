@@ -574,7 +574,7 @@ ul li {
   opacity:1
 }
 
-.page-container .page-close, .page-container .page-scroll {
+.page-container .page-close, .page-container .page-scroll .dropdown{
   display:block;
   z-index:1;
   width:44px;
@@ -590,7 +590,11 @@ ul li {
   -o-transition:  -moz-transform 1s 0s, visibility 0s 1s;
   transition:  transform 1s 0s, visibility 0s 1s;
 }
-
+.dropdown {
+  position:fixed;
+  top:30px;
+  right:5%;
+}
 .page-container .page-close {
   position:fixed;
   top:30px;
