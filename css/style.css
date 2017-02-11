@@ -620,7 +620,7 @@ ul li {
   text-indent: initial;
   background-color: rgba(255,255,255, 1);
   border-radius: 50%;
-  box-shadow: 0 3px 5px 1px;
+  box-shadow: 0 3px 5px black;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -628,10 +628,19 @@ ul li {
   text-decoration: none;
 }
 
-.page-container .hide-content{
+.page-container .hide-content {
   position: absolute;
   display: none;
   top: 0;
+}
+
+.page-container .drop-content.active-btn {
+  color: #f56b6b;
+  cursor: default;
+}
+
+a.menu-btn:hover {
+  color: #f56b6b;
 }
 
 .page-container .page-scroll {
