@@ -2,7 +2,7 @@
 
 *   Media Queries
 
-TOC : 
+TOC :
 
 1. screenwidth greater than 1400px (Large Screens)
 2. screenwidth greater than 1024px (Medium Screen/Large Tablets)
@@ -59,8 +59,8 @@ TOC :
 
 @media only screen and (min-width: 1024px) {
 
-.page-container .page-close {
-  background-image:url("../img/icons/icon-close-desktop.svg");
+.page-container .menu-btn {
+  /*background-image:url("../img/icons/icon-close-desktop.svg");*/
 }
 
 .page-container .page-scroll {
@@ -512,7 +512,7 @@ TOC :
 }
 
 .skills .section-title {
-  font-size: 24px;  
+  font-size: 24px;
   padding: 20px;
 }
 
@@ -661,7 +661,7 @@ TOC :
   width: 100%;
 }
 
-.service-list .service {  
+.service-list .service {
   margin: 10px auto;
 }
 
