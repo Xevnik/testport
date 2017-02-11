@@ -59,8 +59,12 @@ TOC :
 
 @media only screen and (min-width: 1024px) {
 
-.page-container .menu-btn {
-  /*background-image:url("../img/icons/icon-close-desktop.svg");*/
+/*.page-container .menu-btn {
+  background-image:url("../img/icons/icon-close-desktop.svg");
+}*/
+
+.page-container .my-dropdown {
+  right: 2%;
 }
 
 .page-container .page-scroll {

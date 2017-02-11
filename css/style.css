@@ -593,8 +593,8 @@ ul li {
 
 .my-dropdown {
   position:fixed;
-  top:30px;
-  right:5%;
+  top: 20px;
+  right: 5%;
   z-index: 1;
 }
 
@@ -602,6 +602,9 @@ ul li {
   color: rgba(51, 43, 43, 0.71);
 }
 
+.hidden {
+  display: none;
+}
 
 .page-container .menu-btn {
   /*position:fixed;
@@ -622,18 +625,13 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
-.dropbtn .fa-times{
+.page-container .hide-content{
+  position: absolute;
   display: none;
-}
-
-.my-dropdown:hover .dropbtn i.fa-bars{
-  display: none;
-}
-
-.my-dropdown:hover .dropbtn i.fa-times{
-  display: initial;;
+  top: 0;
 }
 
 .page-container .page-scroll {
