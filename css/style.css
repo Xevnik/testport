@@ -38,7 +38,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 
 
-/* -------------------------------- 
+/* --------------------------------
 1. Primary style
 -------------------------------- */
 *,::after,::before {
@@ -186,12 +186,12 @@ ul li {
 
 
 /* ------------------------------------------------
-/*  1.a. Color Schemes for Home Page backgrounds 
+/*  1.a. Color Schemes for Home Page backgrounds
 /*  Choose one and comment/remove other two
 /* ------------------------------------------------*/
 
 
-/* Olive Scheme  
+/* Olive Scheme
 ----------------------------------*/
 
 .single-page:nth-child(1) {
@@ -233,7 +233,7 @@ ul li {
 
 */
 
-/* Dark Scheme 
+/* Dark Scheme
 ----------------------------------*/
 
 /*.single-page:nth-child(1) {*/
@@ -254,7 +254,7 @@ ul li {
 
 
 
-/* -------------------------------- 
+/* --------------------------------
     1.b. Fun Facts Styles
 -------------------------------- */
 
@@ -308,7 +308,7 @@ ul li {
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
     1.c. Footer Styles
 -------------------------------- */
 
@@ -350,17 +350,17 @@ ul li {
 
 
 /* ------------------------------------------- */
-/* 2. Preloader CSS */ 
+/* 2. Preloader CSS */
 /* ------------------------------------------- */
 
 #preloader{
-  background-color:#101524; 
+  background-color:#101524;
   position:fixed;
   left:0;
   top:0;
   width:100%;
   height:100%;
-  z-index:9999;  
+  z-index:9999;
 }
 
 .loader {
@@ -375,8 +375,8 @@ ul li {
 
 
 
-/* -------------------------------- 
-/*   3. Main Components 
+/* --------------------------------
+/*   3. Main Components
 -------------------------------- */
 
 .page-container {
@@ -574,7 +574,7 @@ ul li {
   opacity:1
 }
 
-.page-container .page-close, .page-container .page-scroll {
+.page-container .menu-btn, .page-container .page-scroll{
   display:block;
   z-index:1;
   width:44px;
@@ -591,16 +591,56 @@ ul li {
   transition:  transform 1s 0s, visibility 0s 1s;
 }
 
-.page-container .page-close {
+.my-dropdown {
   position:fixed;
+  top: 20px;
+  right: 5%;
+  z-index: 1;
+}
+
+.my-dropdown a {
+  color: rgba(51, 43, 43, 0.71);
+}
+
+.hidden {
+  display: none;
+}
+
+.page-container .menu-btn {
+  /*position:fixed;
   top:30px;
-  right:5%;
-  background:url("../img/icons/icon-close-mobile.svg") no-repeat center center;
+  right:5%;*/
+  /*background:url("../img/icons/icon-close-mobile.svg") no-repeat center center;*/
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
-  transform: scale(0)
+  transform: scale(0);
+  text-indent: initial;
+  text-indent: initial;
+  background-color: rgba(255,255,255, 1);
+  border-radius: 50%;
+  box-shadow: 0 3px 5px black;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.page-container .hide-content {
+  position: absolute;
+  display: none;
+  top: 0;
+}
+
+.page-container .drop-content.active-btn {
+  color: #f56b6b;
+  cursor: default;
+}
+
+a.menu-btn:hover {
+  color: #f56b6b;
 }
 
 .page-container .page-scroll {
@@ -615,7 +655,7 @@ ul li {
   background:url("../img/icons/icon-arrow-mobile.svg") no-repeat center center
 }
 
-.project-is-open .page-close,.project-is-open .page-scroll {
+.project-is-open .menu-btn,.project-is-open .page-scroll {
   visibility:visible;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -643,7 +683,7 @@ ul li {
   animation-iteration-count:2
 }
 
-.no-touch .project-is-open .page-close:hover {
+.no-touch .project-is-open .menu-btn:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -868,7 +908,7 @@ ul li {
 
 
 
-} /* min-width:768 end */ 
+} /* min-width:768 end */
 
 
 /* ---------------------------------------------
@@ -1930,7 +1970,7 @@ button.filter + label {
   font-family:"Merriweather",sans-serif
 }
 
-/* -------------------------------- 
+/* --------------------------------
 /* 7.a.  Social and Map Styles
 ----------------------------------- */
 .social {
@@ -2070,5 +2110,3 @@ button.filter + label {
   margin: auto;
   font-size: 10rem;
 }
-
-

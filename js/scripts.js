@@ -1,7 +1,7 @@
 // Preloader
 
   $(window).load(function(){
-        $('.loader').fadeOut();    
+        $('.loader').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350);
     });
@@ -34,14 +34,36 @@ jQuery(document).ready(function($) {
     //open page
     $('.single-page').on('click', function() {
         var selectedProject = $(this),
-            toggle = !selectedProject.hasClass('is-full-width');
+            toggle = !selectedProject.hasClass('is-full-width'),
+            page = selectedProject.attr('id');
+            $("a[data-page="+page+"]").addClass('active-btn');
         if (toggle) toggleProject($(this), $('.page-container'), toggle);
     });
 
-    //close page
-    $('.page-container .page-close').on('click', function() {
-        toggleProject($('.is-full-width'), $('.page-container'), false);
+    //toggles hidden class for dropdown
+    function hideDropDown() {
+      $(".menu-btn.dropbtn > i").toggleClass("hidden");
+      $(".menu-btn.drop-content").toggleClass("hide-content");
+    }
 
+    //open and close dropdown
+    $(".menu-btn.dropbtn").on('click', hideDropDown);
+
+    //close page and open page via button
+    $('.page-container .drop-content').on('click', function() {
+        var selected = $(this).attr("data-page");
+        //if active btn do nothing
+        if ($(this).hasClass("active-btn")) { return false };
+        //else remove active-btn class and add to button clicked if not home btn
+        hideDropDown();
+        toggleProject($('.is-full-width'), $('.page-container'), false);
+        $(".active-btn").removeClass("active-btn");
+        if (selected !== "home") {
+          $(this).addClass('active-btn');
+          selected = '#' + selected;
+          var toggle = !($(selected).hasClass('is-full-width'));
+          if (toggle) toggleProject($(selected), $('.page-container'), toggle);
+        }
     });
 
     //scroll to page info
@@ -70,7 +92,7 @@ jQuery(document).ready(function($) {
             //fade out page
             project.animate({
                 opacity: 0
-            }, 200, function() {
+            }, 500, function() {
                 project.removeClass('is-loaded');
                 $('.page-container').find('.page-scroll').attr('style', '');
                 setTimeout(function() {
@@ -106,7 +128,7 @@ jQuery(document).ready(function($) {
         zoom: {
             enabled: true,
             duration: 300, // duration of the effect, in milliseconds
-            easing: 'ease-in-out' // CSS transition easing function 
+            easing: 'ease-in-out' // CSS transition easing function
         }
     });
 
@@ -232,6 +254,3 @@ jQuery(document).ready(function($) {
         });
     };
 })(jQuery);
-
-
-
