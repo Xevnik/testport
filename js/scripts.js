@@ -63,6 +63,7 @@ jQuery(document).ready(function($) {
           selected = '#' + selected;
           var toggle = !($(selected).hasClass('is-full-width'));
           if (toggle) toggleProject($(selected), $('.page-container'), toggle);
+          $(".page-container").scrollTop(0);
         }
     });
 
